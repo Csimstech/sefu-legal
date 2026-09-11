@@ -7,7 +7,7 @@ title: Delete Your SeFu Account
 
 This page explains how to permanently delete your SeFu account and all associated data.
 
-**Operated by:** CSimsTech
+**Operated by:** Simcard Media LLC
 **Contact:** support@sefu.app
 
 ---

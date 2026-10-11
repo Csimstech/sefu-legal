@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-platform="other">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SeFu — Your mentor in your pocket</title>
+  <meta name="description" content="Weekly challenges across 9 areas of life, with a mentor's voice.">
+  <link rel="canonical" href="https://sefu.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SeFu">
+  <meta property="og:title" content="SeFu — Your mentor in your pocket">
+  <meta property="og:description" content="Weekly challenges across 9 areas of life, with a mentor's voice.">
+  <meta property="og:url" content="https://sefu.app/">
+  <meta property="og:image" content="https://sefu.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SeFu — Your mentor in your pocket">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SeFu — Your mentor in your pocket">
+  <meta name="twitter:description" content="Weekly challenges across 9 areas of life, with a mentor's voice.">
+  <meta name="twitter:image" content="https://sefu.app/assets/og-image.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#1C1C1E">
+  <link rel="stylesheet" href="/assets/site.css">
+
+  <script>
+    // Store links. IOS_URL is the TestFlight beta until launch; swap it for the
+    // App Store listing then. Set ANDROID_URL once the Google Play listing is
+    // live; while it is empty, Android shows "Coming soon to Google Play".
+    // This page never redirects: the visitor taps the button.
+    var IOS_URL = 'https://testflight.apple.com/join/P74zyv1A';
+    var ANDROID_URL = '';
+
+    // Only picks which button to show; the <head> above is static, so link
+    // previews (iMessage and others) read the same tags for every visitor.
+    var ua = navigator.userAgent || '';
+    document.documentElement.setAttribute(
+      'data-platform',
+      /iPhone|iPod/.test(ua) ? 'ios' : /Android/.test(ua) ? 'android' : 'other'
+    );
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <main>
+      <img class="mark" src="/assets/sf-mark-cream.svg" width="382" height="403" alt="">
+      <div>
+        <img class="wordmark" src="/assets/sefu-wordmark-cream.svg" width="794" height="196" alt="SeFu">
+        <h1>Your mentor in your pocket.</h1>
+        <p class="lede">Weekly challenges across 9 areas of life, with a mentor's voice.</p>
+        <ul class="areas" aria-label="Focus areas">
+          <li>Health &amp; Wellness</li>
+          <li>Fitness</li>
+          <li>Learning</li>
+          <li>Business &amp; Career</li>
+          <li>Financial Growth</li>
+          <li>Mental Health</li>
+          <li>Relationships</li>
+          <li>Productivity</li>
+          <li>Purpose</li>
+        </ul>
+        <div class="get">
+          <a class="btn only-ios" id="ios-link" href="https://testflight.apple.com/join/P74zyv1A">Get SeFu for iPhone</a>
+          <span class="btn btn-soon only-android" id="android-link">Coming soon to Google Play</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav aria-label="Legal">
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/delete-account">Delete your account</a>
+        <a href="mailto:support@sefu.app">support@sefu.app</a>
+      </nav>
+      <span>SeFu is operated by CSimsTech.</span>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('ios-link').href = IOS_URL;
+    if (ANDROID_URL) {
+      var soon = document.getElementById('android-link');
+      var play = document.createElement('a');
+      play.className = 'btn only-android';
+      play.href = ANDROID_URL;
+      play.textContent = 'Get SeFu on Google Play';
+      soon.replaceWith(play);
+    }
+  </script>
+</body>
+</html>

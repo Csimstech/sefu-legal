@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Delete Your SeFu Account
+title: Delete your account
 ---
 
 # Delete Your SeFu Account

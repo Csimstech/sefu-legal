@@ -1,0 +1,3 @@
+# Canonical and og:url are built from this. Without it they came from the Pages
+# metadata, which still said http:// after "Enforce HTTPS" was turned on.
+url: "https://sefu.app"

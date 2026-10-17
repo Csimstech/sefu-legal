@@ -17,13 +17,14 @@ This page explains how to permanently delete your SeFu account and all associate
 ### Option 1: Delete from inside the app (recommended)
 
 1. Open the SeFu app
-2. Tap the menu icon (☰) in the top-left
-3. Tap **Settings**
-4. Scroll to the **Account** section
-5. Tap **Delete my account**
-6. Confirm your decision
+2. Tap the menu icon (☰) in the top-left. This opens **Settings**
+3. In the **Account** section, tap **Delete my account** (it is also under **Settings → Legal**)
+4. Read what will be deleted, then tick **I understand my data will be permanently deleted**
+5. Tap **Delete account permanently**
 
-Your account and all data will be permanently deleted within 7 days.
+If you signed in with Apple, Apple asks you to confirm, and SeFu also disconnects your Apple ID.
+
+Your account and all data are deleted immediately.
 
 ### Option 2: Email request
 
